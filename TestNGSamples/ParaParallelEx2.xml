@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite" parallel="test" thread-count="3">
+  <test name="Firefox Test1">
+    <parameter name="browser" value="firefox"/>
+       <classes>
+      <class name="Expertzlab.TestNGSamples.ParameterizationParallelEx1"/>
+    </classes>
+  </test> <!--  Test1 -->
+  <test name="Chrome Test2">
+    <parameter name="browser" value="chrome"/>
+    
+    <classes>
+      <class name="Expertzlab.TestNGSamples.ParameterizationParallelEx1"/>
+    </classes>
+  </test> <!-- Test2 -->
+  
+    <test name="Firefox Test2"  >
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="testng_ex.CrossWebBrowser"/>
+    </classes>
+  </test> <!-- Default test -->
+  
+  <test name="Chrome Test2">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testng_ex.CrossWebBrowser"/>
+    </classes>
+  </test> <!-- Default test -->
+  
+  
+  
+</suite> <!-- Test Suite -->
+            

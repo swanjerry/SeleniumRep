@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Firefox Test1">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Expertzlab.TestNGSamples.ParallelParaEx2"/>
+    </classes>
+  </test> <!-- Firefox Test1 -->
+  <test name="Chrome Test1">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Expertzlab.TestNGSamples.ParallelParaEx2"/>
+    </classes>
+  </test> <!-- Chrome Test1 -->
+  <test name="Firefox Test2">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Expertzlab.TestNGSamples.ParallelParaEx2"/>
+    </classes>
+  </test> <!-- Firefox Test2 -->
+  <test name="Chrome Test2">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Expertzlab.TestNGSamples.ParallelParaEx2"/>
+    </classes>
+  </test> <!-- Chrome Test2 -->
+</suite> <!-- Failed suite [Test Suite] -->
